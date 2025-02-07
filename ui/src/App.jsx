@@ -27,6 +27,9 @@ import AppBarModules from "./plugins/AppBarModules";
 import CustomAppBarButtons from "./plugins/CustomAppBarButtons";
 import Workbench from "./pages/workbench/Workbench";
 
+import { loader } from "@monaco-editor/react";
+loader.config({ paths: { vs: "../monaco-editor/min/vs" } });
+
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#efefef", // TODO: Use theme var

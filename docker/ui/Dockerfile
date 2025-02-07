@@ -1,7 +1,7 @@
 #
 # conductor:ui - Netflix Conductor UI
 #
-FROM node:14-alpine
+FROM node:16-alpine
 LABEL maintainer="Netflix OSS <conductor@netflix.com>"
 
 # Install the required packages for the node build
@@ -13,10 +13,14 @@ RUN apk update && apk add --no-cache python3 py3-pip make g++
 WORKDIR /usr/src/app
  
 # Copies package.json to Docker environment in a separate layer as a performance optimization
-COPY ./ui/package.json ./
+COPY ./ui/package.json ./ui/yarn.lock ./
  
 # Installs all node packages. Cached unless package.json changes
-RUN yarn install
+RUN yarn install --force
+
+RUN npx cypress cache clear
+
+RUN yarn add cypress@^10.3.1 --dev
  
 # Copies everything else over to Docker environment
 # node_modules excluded in .dockerignore. 

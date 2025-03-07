@@ -14,14 +14,14 @@ WORKDIR /usr/src/app
  
 # Copies package.json to Docker environment in a separate layer as a performance optimization
 COPY ./ui/package.json ./ui/yarn.lock ./
- 
+
 # Installs all node packages. Cached unless package.json changes
 RUN yarn install --force
 
 RUN npx cypress cache clear
 
 RUN yarn add cypress@^10.3.1 --dev
- 
+
 # Copies everything else over to Docker environment
 # node_modules excluded in .dockerignore. 
 COPY ./ui .

@@ -33,4 +33,4 @@ fi
 
 echo "Using java options config: $JAVA_OPTS"
 
-java ${JAVA_OPTS} -jar -DCONDUCTOR_CONFIG_FILE=$config_file conductor-server-*-boot.jar 2>&1 | tee -a /app/logs/server.log
+java -javaagent:/app/jmx_prometheus_javaagent-0.19.0.jar=19090:/app/config.yaml -jar -DCONDUCTOR_CONFIG_FILE=$config_file conductor-server-*-boot.jar 2>&1 | tee -a /app/logs/server.log | grep -v "processUnacks() will NOT be atomic"

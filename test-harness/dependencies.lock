@@ -1,7 +1,7 @@
 {
     "annotationProcessor": {
         "org.springframework.boot:spring-boot-configuration-processor": {
-            "locked": "2.7.2"
+            "locked": "2.7.11"
         }
     },
     "compileClasspath": {
@@ -1198,7 +1198,7 @@
             "locked": "1.3-groovy-2.5"
         },
         "org.springframework.boot:spring-boot": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-autoconfigure",
                 "org.springframework.boot:spring-boot-starter",
@@ -1207,39 +1207,39 @@
             ]
         },
         "org.springframework.boot:spring-boot-autoconfigure": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter",
                 "org.springframework.boot:spring-boot-test-autoconfigure"
             ]
         },
         "org.springframework.boot:spring-boot-starter": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-test"
             ]
         },
         "org.springframework.boot:spring-boot-starter-log4j2": {
-            "locked": "2.7.2"
+            "locked": "2.7.11"
         },
         "org.springframework.boot:spring-boot-starter-logging": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter"
             ]
         },
         "org.springframework.boot:spring-boot-starter-test": {
-            "locked": "2.7.2"
+            "locked": "2.7.11"
         },
         "org.springframework.boot:spring-boot-test": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-test",
                 "org.springframework.boot:spring-boot-test-autoconfigure"
             ]
         },
         "org.springframework.boot:spring-boot-test-autoconfigure": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-test"
             ]
@@ -3580,7 +3580,7 @@
             ]
         },
         "org.springframework.boot:spring-boot": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-actuator",
                 "org.springframework.boot:spring-boot-actuator-autoconfigure",
@@ -3591,19 +3591,19 @@
             ]
         },
         "org.springframework.boot:spring-boot-actuator": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-actuator-autoconfigure"
             ]
         },
         "org.springframework.boot:spring-boot-actuator-autoconfigure": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-actuator"
             ]
         },
         "org.springframework.boot:spring-boot-autoconfigure": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springdoc:springdoc-openapi-common",
                 "org.springframework.boot:spring-boot-actuator-autoconfigure",
@@ -3612,7 +3612,7 @@
             ]
         },
         "org.springframework.boot:spring-boot-starter": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "com.netflix.conductor:conductor-server",
                 "org.springframework.boot:spring-boot-starter-actuator",
@@ -3623,60 +3623,60 @@
             ]
         },
         "org.springframework.boot:spring-boot-starter-actuator": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "com.netflix.conductor:conductor-server"
             ]
         },
         "org.springframework.boot:spring-boot-starter-json": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-web"
             ]
         },
         "org.springframework.boot:spring-boot-starter-log4j2": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "com.netflix.conductor:conductor-server"
             ]
         },
         "org.springframework.boot:spring-boot-starter-logging": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter"
             ]
         },
         "org.springframework.boot:spring-boot-starter-test": {
-            "locked": "2.7.2"
+            "locked": "2.7.11"
         },
         "org.springframework.boot:spring-boot-starter-tomcat": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-web"
             ]
         },
         "org.springframework.boot:spring-boot-starter-validation": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "com.netflix.conductor:conductor-server"
             ]
         },
         "org.springframework.boot:spring-boot-starter-web": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "com.netflix.conductor:conductor-rest",
                 "com.netflix.conductor:conductor-server"
             ]
         },
         "org.springframework.boot:spring-boot-test": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-test",
                 "org.springframework.boot:spring-boot-test-autoconfigure"
             ]
         },
         "org.springframework.boot:spring-boot-test-autoconfigure": {
-            "locked": "2.7.2",
+            "locked": "2.7.11",
             "transitive": [
                 "org.springframework.boot:spring-boot-starter-test"
             ]

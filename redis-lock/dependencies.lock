@@ -212,7 +212,7 @@
             ]
         },
         "org.redisson:redisson": {
-            "locked": "3.13.3"
+            "locked": "3.22.0"
         },
         "org.slf4j:jul-to-slf4j": {
             "locked": "1.7.36",
@@ -647,7 +647,7 @@
             ]
         },
         "org.redisson:redisson": {
-            "locked": "3.13.3"
+            "locked": "3.22.0"
         },
         "org.slf4j:slf4j-api": {
             "locked": "1.7.36",
@@ -1046,7 +1046,7 @@
             ]
         },
         "org.redisson:redisson": {
-            "locked": "3.13.3"
+            "locked": "3.22.0"
         },
         "org.skyscreamer:jsonassert": {
             "locked": "1.5.1",
@@ -1669,7 +1669,7 @@
             ]
         },
         "org.redisson:redisson": {
-            "locked": "3.13.3"
+            "locked": "3.22.0"
         },
         "org.skyscreamer:jsonassert": {
             "locked": "1.5.1",

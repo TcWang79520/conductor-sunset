@@ -3491,7 +3491,7 @@
             ]
         },
         "org.redisson:redisson": {
-            "locked": "3.13.3",
+            "locked": "3.22.0",
             "transitive": [
                 "com.netflix.conductor:conductor-redis-lock"
             ]

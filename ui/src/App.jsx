@@ -72,9 +72,9 @@ export default function App() {
           <Button component={NavLink} path="/taskQueue">
             Task Queues
           </Button>
-          <Button component={NavLink} path="/workbench">
-            Workbench
-          </Button>
+{/*           <Button component={NavLink} path="/workbench"> */}
+{/*             Workbench */}
+{/*           </Button> */}
           <CustomAppBarButtons />
 
           <div className={classes.toolbarRight}>

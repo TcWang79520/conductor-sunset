@@ -318,12 +318,12 @@ export default function Workflow() {
             )}
 
             <div className={classes.rightButtons}>
-              <Button
-                disabled={!_.isEmpty(jsonErrors) || !isModified}
-                onClick={handleOpenSave}
-              >
-                Save
-              </Button>
+{/*               <Button */}
+{/*                 disabled={!_.isEmpty(jsonErrors) || !isModified} */}
+{/*                 onClick={handleOpenSave} */}
+{/*               > */}
+{/*                 Save */}
+{/*               </Button> */}
               <Button
                 disabled={!isModified}
                 onClick={() => handleResetVersion(workflowVersion)}

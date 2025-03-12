@@ -91,52 +91,52 @@ export default function BulkActionModule({ selectedRows }) {
   return (
     <div className={classes.actionBar}>
       <Heading level={0}>{selectedRows.length} Workflows Selected.</Heading>
-      <DropdownButton
-        className={classes.actionButton}
-        options={[
-          {
-            label: "Pause",
-            handler: () => pauseAction({ body: JSON.stringify(selectedIds) }),
-          },
-          {
-            label: "Resume",
-            handler: () => resumeAction({ body: JSON.stringify(selectedIds) }),
-          },
-          {
-            label: "Restart with current definitions",
-            handler: () =>
-              restartCurrentAction({ body: JSON.stringify(selectedIds) }),
-          },
-          {
-            label: "Restart with latest definitions",
-            handler: () =>
-              restartLatestAction({ body: JSON.stringify(selectedIds) }),
-          },
-          {
-            label: "Retry",
-            handler: () => retryAction({ body: JSON.stringify(selectedIds) }),
-          },
-          {
-            label: "Terminate",
-            handler: () =>
-              terminateAction({ body: JSON.stringify(selectedIds) }),
-          },
-          {
-            label: "Terminate with Reason",
-            handler: () => {
-              const reason = window.prompt("Termination Reason", "");
-              if (reason) {
-                terminateWithReasonAction({
-                  body: JSON.stringify(selectedIds),
-                  reason,
-                });
-              }
-            },
-          },
-        ]}
-      >
-        Bulk Action
-      </DropdownButton>
+{/*       <DropdownButton */}
+{/*         className={classes.actionButton} */}
+{/*         options={[ */}
+{/*           { */}
+{/*             label: "Pause", */}
+{/*             handler: () => pauseAction({ body: JSON.stringify(selectedIds) }), */}
+{/*           }, */}
+{/*           { */}
+{/*             label: "Resume", */}
+{/*             handler: () => resumeAction({ body: JSON.stringify(selectedIds) }), */}
+{/*           }, */}
+{/*           { */}
+{/*             label: "Restart with current definitions", */}
+{/*             handler: () => */}
+{/*               restartCurrentAction({ body: JSON.stringify(selectedIds) }), */}
+{/*           }, */}
+{/*           { */}
+{/*             label: "Restart with latest definitions", */}
+{/*             handler: () => */}
+{/*               restartLatestAction({ body: JSON.stringify(selectedIds) }), */}
+{/*           }, */}
+{/*           { */}
+{/*             label: "Retry", */}
+{/*             handler: () => retryAction({ body: JSON.stringify(selectedIds) }), */}
+{/*           }, */}
+{/*           { */}
+{/*             label: "Terminate", */}
+{/*             handler: () => */}
+{/*               terminateAction({ body: JSON.stringify(selectedIds) }), */}
+{/*           }, */}
+{/*           { */}
+{/*             label: "Terminate with Reason", */}
+{/*             handler: () => { */}
+{/*               const reason = window.prompt("Termination Reason", ""); */}
+{/*               if (reason) { */}
+{/*                 terminateWithReasonAction({ */}
+{/*                   body: JSON.stringify(selectedIds), */}
+{/*                   reason, */}
+{/*                 }); */}
+{/*               } */}
+{/*             }, */}
+{/*           }, */}
+{/*         ]} */}
+{/*       > */}
+{/*         Bulk Action */}
+{/*       </DropdownButton> */}
       {(results || isLoading) && (
         <Dialog
           open={true}

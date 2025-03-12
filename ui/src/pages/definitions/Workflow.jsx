@@ -113,13 +113,13 @@ export default function WorkflowDefinitions() {
 
       <div className={classes.tabContent}>
         <div className={classes.buttonRow}>
-          <Button
-            component={NavLink}
-            path="/workflowDef"
-            startIcon={<AddIcon />}
-          >
-            New Workflow Definition
-          </Button>
+{/*           <Button */}
+{/*             component={NavLink} */}
+{/*             path="/workflowDef" */}
+{/*             startIcon={<AddIcon />} */}
+{/*           > */}
+{/*             New Workflow Definition */}
+{/*           </Button> */}
         </div>
 
         {workflows && (

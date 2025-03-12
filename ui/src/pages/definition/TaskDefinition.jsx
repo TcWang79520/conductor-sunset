@@ -130,12 +130,12 @@ export default function TaskDefinition() {
           {!_.isEmpty(jsonErrors) && <Pill color="red" label="Validation" />}
 
           <div className={classes.rightButtons}>
-            <Button
-              disabled={!_.isEmpty(jsonErrors) || !isModified}
-              onClick={handleOpenSave}
-            >
-              Save
-            </Button>
+{/*             <Button */}
+{/*               disabled={!_.isEmpty(jsonErrors) || !isModified} */}
+{/*               onClick={handleOpenSave} */}
+{/*             > */}
+{/*               Save */}
+{/*             </Button> */}
             <Button
               disabled={!isModified}
               onClick={() => setResetDialog(true)}

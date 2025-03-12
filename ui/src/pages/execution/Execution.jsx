@@ -227,7 +227,7 @@ export default function Execution() {
                 <SecondaryButton onClick={refresh} style={{ marginRight: 10 }}>
                   Refresh
                 </SecondaryButton>
-                <ActionModule execution={execution} triggerReload={refresh} />
+{/*                 <ActionModule execution={execution} triggerReload={refresh} /> */}
               </div>
               <Heading level={3} gutterBottom>
                 {execution.workflowType || execution.workflowName}{" "}

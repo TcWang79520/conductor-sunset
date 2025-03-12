@@ -1,0 +1,30 @@
+
+ssh-keygen -t rsa -b 4096 -C "aopp5566a@gmail.com"
+cat ~/.ssh/id_rsa.pub
+
+git clone git@github.com:TcWang79520/conductor.git
+cd conductor/
+git fetch origin v3.11.3
+git checkout -b v3.11.3 origin/v3.11.3
+git branch
+
+
+
+./gradlew :conductor-client:spotlessApply
+./gradlew :conductor-java-sdk:spotlessApply
+./gradlew build -x test --stacktrace
+docker build -f docker/server/Dockerfile -t conductor-server:v3.11.3.x1 .
+
+
+docker tag conductor-server:v3.11.3.x3 aopp5566a/conductor-server:v3.11.3.cve-1
+
+
+git fetch --tags
+git tag
+git checkout tags/v3.7.9
+git checkout -b v3.7.9 v3.7.9
+
+
+curl -v -X GET "http://localhost:19090/metrics"
+curl -v -X GET "http://localhost:8080/actuator/prometheus"
+curl -v -X GET "http://localhost:8080/api/tasks/poll/testetest"
